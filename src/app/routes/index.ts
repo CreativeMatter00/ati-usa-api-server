@@ -1,4 +1,5 @@
 import express from 'express';
+import { BlogRoutes } from '../modules/blog/blog.route';
 import { careerRoutes } from '../modules/career/career.route';
 import { ourServiceRoutes } from '../modules/service/ourService.route';
 import { tecTalentsRoutes } from '../modules/technicalTalents/tecTalents.route';
@@ -17,6 +18,10 @@ const moduleRoutes = [
   {
     path: '/tecTalents',
     route: tecTalentsRoutes,
+  },
+  {
+    path: '/blog',
+    route: BlogRoutes,
   },
 ];
 
