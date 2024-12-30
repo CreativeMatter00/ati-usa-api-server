@@ -1,6 +1,7 @@
 import express from 'express';
 import { BlogRoutes } from '../modules/blog/blog.route';
 import { careerRoutes } from '../modules/career/career.route';
+import { letsTalkRoutes } from '../modules/letsTalk/letsTalk.route';
 import { ourServiceRoutes } from '../modules/service/ourService.route';
 import { tecTalentsRoutes } from '../modules/technicalTalents/tecTalents.route';
 
@@ -22,6 +23,10 @@ const moduleRoutes = [
   {
     path: '/blog',
     route: BlogRoutes,
+  },
+  {
+    path: '/lets-talk',
+    route: letsTalkRoutes,
   },
 ];
 

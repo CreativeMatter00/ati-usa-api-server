@@ -11,6 +11,8 @@ process.on('uncaughtException', error => {
 
 let server: Server;
 
+console.log('ok server');
+
 async function bootstrap() {
   try {
     await mongoose.connect(config.database_url as string);
